@@ -1,0 +1,14 @@
+<head>
+  <title>Accela Wiki</title>
+  <a-sc use="meta" @title="title" @description="description"></a-sc>
+</head>
+
+<a-meta>
+  <a-sc use="sitemap-xml:lastmod" @value="modtime"></a-sc>
+</a-meta>
+
+<body>
+  <a-c use="layout">
+    <a-c use="article" @title="title" @path="path" @datapath="datapath" @modtime="modtime"></a-c>
+  </a-c>
+</body>

@@ -1,0 +1,15 @@
+<ul>
+  <template a-for="child in children">
+    <li>
+      <template a-if="child.path">
+        <a :href="child.path" :text="child.title"></a>
+      </template>
+      <template a-if="!child.path">
+        <span :text="child.title"></span>
+      </template>
+      <template a-if="child.isGroup">
+        <a-c use="sidebar-ul" @children="child.children"></a-c>
+      </template>
+    </li>
+  </template>
+</ul>

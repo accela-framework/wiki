@@ -1,0 +1,17 @@
+#!/usr/bin/env php
+<?php
+
+use Accela\Env;
+
+if(php_sapi_name() !== "cli") exit;
+
+require_once __DIR__ . "/../../vendor/autoload.php";
+
+Env::load(__DIR__ . "/../../env.php");
+
+$accela = require_once __DIR__ . "/../init-accela.php";
+$accela->staticSiteGenerator->output([
+  "indexDir" => __DIR__ . "/../..",
+  "outputDir" => "out",
+  "includeFiles" => ["assets"]
+]);

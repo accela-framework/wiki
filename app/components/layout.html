@@ -1,0 +1,18 @@
+<div class="wiki-container">
+  <header>
+    <h1><a href="/" :text="rootNode.title">Wiki</a></h1>
+  </header>
+
+  <div class="content">
+    <aside>
+      <nav>
+        <a href="/" class="home-link" :text="rootNode.title">Home</a>
+        <a-c use="sidebar-ul" @children="rootNode.children"></a-c>
+      </nav>
+    </aside>
+
+    <main>
+      <div data-contents></div>
+    </main>
+  </div>
+</div>
