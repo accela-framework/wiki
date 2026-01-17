@@ -11,14 +11,6 @@ Accela Wikiは、PHP SPAフレームワークの**Accela**で構築されたマ�
 
 **※Accelaの動作確認を含むテストプロジェクトのため、今後は大幅な変更や削除が行われる可能性があります。**
 
-## 3ステップで始める
-
-1. `git clone https://github.com/accela-framework/wiki.git && composer install`
-2. `data/`にマークダウンファイルを配置
-3. ブラウザでアクセス
-
-それだけでWikiが完成します。
-
 ## デモ
 
 このサイト自体がAccela Wikiで構築されています。サイドバーのナビゲーションや階層構造は、`data/`ディレクトリの構成から自動生成されています。

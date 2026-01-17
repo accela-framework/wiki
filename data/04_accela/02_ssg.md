@@ -24,4 +24,4 @@ php app/bin/build
 
 ## 注意事項
 
-生成される`.htaccess`はApache環境向けです。GitHub PagesやNetlify等で拡張子なしURLを使いたい場合は、ファイルを`{name}.md`ではなく`{name}/index.md`として作成してください。
+生成される`.htaccess`はApache環境向けです。GitHub PagesやNetlify等で拡張子なしURLを使いたい場合は、ファイルを`{name}.md`ではなく`{name}/index.md`として作成し、ディレクトリインデックスをベースにすることでリライトを回避できます。
